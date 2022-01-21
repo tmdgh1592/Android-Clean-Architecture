@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CleanArchitectureMovie</string>
+
+    <!-- 네트워크 상태 스낵바 텍스트 -->
+    <string name="snack_bar_content_internet_disconnected">인터넷 연결이 끊겼습니다.\n네트워크 상태를 확인해주세요!</string> <!--network is not conneceted-->
+
+    <!-- 기타 -->
+    <string name="ok">확인</string>
+    <string name="cancel">취소</string>
+</resources>

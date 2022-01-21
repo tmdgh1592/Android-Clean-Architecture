@@ -1,0 +1,65 @@
+// versions.gradle
+// Define versions in a single place
+ext.deps = [:]
+ext.versions = [:]
+
+def versions = [:]
+def deps = [:]
+
+versions.compileSdk = 31
+versions.targetSdk = 31
+versions.minSdk = 21
+versions.versionCode = 1
+versions.versionName = "1.0.0"
+
+// gradle
+versions.androidGradleVersion = "7.0.4"
+deps.androidGradlePlugin = "com.android.tools.build:gradle:$versions.androidGradleVersion"
+
+// kotlin
+versions.kotlinVersion = "1.6.10"
+deps.kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlinVersion"
+
+// calendar
+versions.calendarVersion = "1.0.4"
+
+//RxAndroid
+versions.rxAndroid = "3.0.0"
+
+// RxJava
+versions.rxJava = "3.0.6"
+
+// RxKotlin
+versions.rxKotlin = "3.0.0"
+
+// Timber
+versions.timber = "5.0.1"
+deps.timber = "com.jakewharton.timber:timber:$versions.timber"
+
+// Koin Core features
+//코어
+versions.koinCoreVersion = "2.0.0-rc-2"
+deps.koinCore = "org.koin:koin-core:$versions.koinCoreVersion"
+
+//안드로이드 context 주입, 안드로이드 log 지원 기능을 제공
+versions.koinAndroidVersion = "2.0.1"
+deps.koinAndroid = "org.koin:koin-android:$versions.koinAndroidVersion"
+
+//LifecycleOwner 들에서 scope 생성-삭제를 자동화하는 기능을 제공
+versions.androidxScopeVersion = "2.0.0-rc-2"
+deps.androidxScope = "org.koin:koin-androidx-scope:$versions.androidxScopeVersion"
+
+//AAC의 ViewModel 을 Actiity나 Fragment에서 손쉽게 주입받을 수 있는 기능을 제공
+versions.viewModelVersion = "2.0.1"
+deps.koinViewModel = "org.koin:koin-androidx-viewmodel:$versions.viewModelVersion"
+
+// Koin Test features
+versions.koinVersion = "3.1.4"
+deps.koin = "io.insert-koin:koin-test:$versions.koin_version"
+
+
+
+
+ext.versions = versions
+ext.deps = deps
+
